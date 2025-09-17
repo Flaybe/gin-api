@@ -1,0 +1,20 @@
+# Go
+/bin
+/build
+/out
+*.test
+
+# Modules
+vendor/
+
+# VCS & IDE
+.git
+.gitignore
+.idea
+.vscode
+
+# OS
+.DS_Store
+
+# Misc
+*.log
