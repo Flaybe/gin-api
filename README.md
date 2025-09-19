@@ -13,7 +13,7 @@ The API provides two endpoints:
 
 ### Start the server
 ```bash
-go run cmd/server/main.go
+go run main.go
 ```
 
 By default, the server listens on port `:8080`.
