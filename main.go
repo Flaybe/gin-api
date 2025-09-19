@@ -3,11 +3,12 @@ package main
 import (
 	"context"
 	"gin-api/config"
-	"github.com/gin-contrib/cors"
-	"github.com/gin-gonic/gin"
 	"log"
 	"net/http"
 	"time"
+
+	"github.com/gin-contrib/cors"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -52,7 +53,7 @@ func main() {
 			return
 		}
 		// Create a context with timeout (e.g. 2 seconds)
-		ctx, cancel := context.WithTimeout(c.Request.Context(), DefaultTimeout)
+		ctx, cancel := context.WithTimeout(c.Request.Context(), config.DefaultTimeout)
 		defer cancel()
 
 		result := make(chan string, 1)
